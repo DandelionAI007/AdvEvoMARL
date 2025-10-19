@@ -269,49 +269,70 @@
     </section>
 
     <!-- Results & Conclusions Carousel Section -->
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title is-3 has-text-centered">Results & Conclusions</h2>
-          <div id="results-carousel" class="carousel carousel-animated carousel-animate-slide" data-autoplay="false" data-navigation="true" data-pagination="true">
-            <div class="carousel-container">
-              <div class="carousel-item is-active">
-                <img src="static/images/result1_placeholder.png" alt="Figure from paper: Attack Success Rate comparison" loading="lazy"/>
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Results & Conclusions</h2>
+    
+        <div id="results-carousel" class="carousel carousel-animated carousel-animate-slide" 
+             data-autoplay="false" data-navigation="true" data-pagination="true">
+          <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-item is-active">
+              <img src="static/images/result1_placeholder.png" alt="Figure 1: Attack Success Rate comparison" loading="lazy"/>
+              <div class="content">
                 <h3 class="subtitle is-5 has-text-centered">
-                  Figure 1: Attack Success Rate (ASR) across various network topologies – Our method drives ASR below 20% versus baseline ~38%. <br>
-                  <em>Conclusion:</em> Embedding adversarial co-evolution yields significant safety improvement under diverse threat scenarios.
+                  Figure 1: Attack Success Rate (ASR) across various topologies — our method drives ASR below 20% vs baseline ~38%.
                 </h3>
-              </div>
-              <div class="carousel-item">
-                <img src="static/images/result2_placeholder.png" alt="Figure/Table from paper: Task Accuracy improvement" loading="lazy"/>
-                <h3 class="subtitle is-5 has-text-centered">
-                  Figure 2: Task accuracy improvement – up to +3.7% gain compared to baseline, demonstrating that defense does not sacrifice utility. <br>
-                  <em>Conclusion:</em> Safety and performance can co-exist when the learning framework is co-designed for both.
-                </h3>
-              </div>
-              <div class="carousel-item">
-                <img src="static/images/result3_placeholder.png" alt="Table from paper: Ablation study on public baseline" loading="lazy"/>
-                <h3 class="subtitle is-5 has-text-centered">
-                  Table 1: Ablation of public-baseline mechanism – shows substantial reduction in learning variance and improved coordination among defender agents. <br>
-                  <em>Conclusion:</em> The public-baseline mechanism is key to stabilizing multi-agent co-evolution and improving intra-group cooperation.
-                </h3>
-              </div>
-              <div class="carousel-item">
-                <img src="static/images/result4_placeholder.png" alt="Figure/Table from paper: Safety-Utility trade-off" loading="lazy"/>
-                <h3 class="subtitle is-5 has-text-centered">
-                  Figure 3: Safety-Utility Trade-off – confirms that safety gains are achieved without degrading task performance. <br>
-                  <em>Conclusion:</em> Embedding safety within the agents avoids the typical trade-off and yields a lighter, more scalable architecture.
-                </h3>
+                <p>
+                  Conclusion: Embedding adversarial co-evolution of attacker and defender agents substantially improves system safety under diverse threat scenarios, reducing ASR to under 20%.
+                </p>
               </div>
             </div>
-            <div class="carousel-navigation is-centered">
-              <div class="carousel-nav-left"><i class="fas fa-chevron-left"></i></div>
-              <div class="carousel-nav-right"><i class="fas fa-chevron-right"></i></div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="static/images/result2_placeholder.png" alt="Figure 2: Task Accuracy improvement" loading="lazy"/>
+              <div class="content">
+                <h3 class="subtitle is-5 has-text-centered">
+                  Figure 2: Task Accuracy Improvement — up to +3.7% accuracy gain, showing defence does not sacrifice utility.
+                </h3>
+                <p>
+                  Conclusion: Safety and utility can co-exist: our framework avoids the typical trade-off where better safety means worse performance.
+                </p>
+              </div>
             </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="static/images/result3_placeholder.png" alt="Table 1: Ablation study of public-baseline mechanism" loading="lazy"/>
+              <div class="content">
+                <h3 class="subtitle is-5 has-text-centered">
+                  Table 1: Ablation Study on Public-Baseline Mechanism — reduction in learning variance and improved group coordination.
+                </h3>
+                <p>
+                  Conclusion: The public-baseline mechanism is key to stabilizing multi-agent co-evolution training and improving intra-group cooperation.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <img src="static/images/result4_placeholder.png" alt="Figure 3: Safety-Utility Trade-off" loading="lazy"/>
+              <div class="content">
+                <h3 class="subtitle is-5 has-text-centered">
+                  Figure 3: Safety-Utility Trade-off — demonstrates safety gains without utility decline.
+                </h3>
+                <p>
+                  Conclusion: By internalising safety within agents rather than external guard modules, the system becomes lighter, more scalable, and less prone to single-point failures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-navigation is-centered">
+            <div class="carousel-nav-left"><i class="fas fa-chevron-left"></i></div>
+            <div class="carousel-nav-right"><i class="fas fa-chevron-right"></i></div>
           </div>
         </div>
       </div>
     </section>
+
 
 
 
