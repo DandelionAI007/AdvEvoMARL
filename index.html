@@ -268,54 +268,51 @@
       </div>
     </section>
 
-   <!-- Key Results & Conclusions -->
-    <section class="section hero">
-      <div class="container is-max-desktop">
-        <h2 class="title is-3">Key Results & Conclusions</h2>
-        <div class="content">
-          <h4 class="subtitle is-4">Major Experimental Results</h4>
-          <div class="columns is-multiline">
-            <div class="column is-half">
-              <img src="static/images/result1_placeholder.png" alt="Figure from paper: Attack Success Rate comparison" loading="lazy"/>
-              <p><strong>Figure 1:</strong> Attack Success Rate (ASR) across various topologies – our method reduces ASR to <20% vs. baseline ~38%.</p>
+    <!-- Results & Conclusions Carousel Section -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Results & Conclusions</h2>
+          <div id="results-carousel" class="carousel carousel-animated carousel-animate-slide" data-autoplay="false" data-navigation="true" data-pagination="true">
+            <div class="carousel-container">
+              <div class="carousel-item is-active">
+                <img src="static/images/result1_placeholder.png" alt="Figure from paper: Attack Success Rate comparison" loading="lazy"/>
+                <h3 class="subtitle is-5 has-text-centered">
+                  Figure 1: Attack Success Rate (ASR) across various network topologies – Our method drives ASR below 20% versus baseline ~38%. <br>
+                  <em>Conclusion:</em> Embedding adversarial co-evolution yields significant safety improvement under diverse threat scenarios.
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/result2_placeholder.png" alt="Figure/Table from paper: Task Accuracy improvement" loading="lazy"/>
+                <h3 class="subtitle is-5 has-text-centered">
+                  Figure 2: Task accuracy improvement – up to +3.7% gain compared to baseline, demonstrating that defense does not sacrifice utility. <br>
+                  <em>Conclusion:</em> Safety and performance can co-exist when the learning framework is co-designed for both.
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/result3_placeholder.png" alt="Table from paper: Ablation study on public baseline" loading="lazy"/>
+                <h3 class="subtitle is-5 has-text-centered">
+                  Table 1: Ablation of public-baseline mechanism – shows substantial reduction in learning variance and improved coordination among defender agents. <br>
+                  <em>Conclusion:</em> The public-baseline mechanism is key to stabilizing multi-agent co-evolution and improving intra-group cooperation.
+                </h3>
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/result4_placeholder.png" alt="Figure/Table from paper: Safety-Utility trade-off" loading="lazy"/>
+                <h3 class="subtitle is-5 has-text-centered">
+                  Figure 3: Safety-Utility Trade-off – confirms that safety gains are achieved without degrading task performance. <br>
+                  <em>Conclusion:</em> Embedding safety within the agents avoids the typical trade-off and yields a lighter, more scalable architecture.
+                </h3>
+              </div>
             </div>
-            <div class="column is-half">
-              <img src="static/images/result2_placeholder.png" alt="Figure/Table from paper: Task Accuracy improvement" loading="lazy"/>
-              <p><strong>Figure 2:</strong> Task accuracy change – we achieve task accuracy increases up to +3.7% compared to baseline.</p>
-            </div>
-            <div class="column is-half">
-              <img src="static/images/result3_placeholder.png" alt="Table from paper: Ablation study public baseline" loading="lazy"/>
-              <p><strong>Table 1:</strong> Ablation study – public baseline mechanism significantly reduces learning variance and improves defender coordination.</p>
-            </div>
-            <div class="column is-half">
-              <img src="static/images/result4_placeholder.png" alt="Figure/Table from paper: Safety-utility trade-off" loading="lazy"/>
-              <p><strong>Figure 3:</strong> Safety-utility trade-off – confirms that safety gains do not come at the cost of utility loss.</p>
+            <div class="carousel-navigation is-centered">
+              <div class="carousel-nav-left"><i class="fas fa-chevron-left"></i></div>
+              <div class="carousel-nav-right"><i class="fas fa-chevron-right"></i></div>
             </div>
           </div>
-    
-          <h4 class="subtitle is-4">Conclusions</h4>
-          <p>
-            This study demonstrates through extensive experiments that embedding safety directly into the learning process of multi-agent systems is a viable and effective strategy. Unlike traditional approaches where improving safety often comes at the expense of task performance, our framework—<strong>AdvEvo-MARL</strong>—achieves both higher safety and maintained or improved utility.
-          </p>
-          <p>
-            First, across diverse attack topologies (chain, tree, complete) and adversarial modes (jailbreak, prompt injection, multi-agent collusion), AdvEvo-MARL consistently drives the Attack Success Rate (ASR) below 20%, outperforming baseline methods which reach ~38%.  
-          </p>
-          <p>
-            Second, on the task-performance front, not only does the framework avoid the common trade-off between defense and utility, but it even yields up to +3.7% improvement in task accuracy in certain scenarios. This indicates that our method enables agents to become safe *and* capable.  
-          </p>
-          <p>
-            Third, from a training and system-design perspective, the introduction of a <em>public-baseline</em> for advantage estimation reduces variance in policy updates and enhances intra-group coordination, while the co-evolutionary interaction between attacker and defender agents fosters robust adaptation to evolving threats.  
-          </p>
-          <p>
-            Finally, from a broader system architecture standpoint, embed­ding safety within the agent framework (rather than relying on external guard modules) provides a lighter, more scalable, and less failure-prone solution. In summary, AdvEvo-MARL offers a unified framework that evolves alongside adversarial threats while preserving strong task performance.  
-          </p>
-          <p>
-            Looking ahead, this work paves the way for safer, more capable multi-agent systems: future directions include extending to long-horizon, multi-task, multi-modal environments, and scaling to larger agent populations and open-ended co-evolution settings.  
-          </p>
         </div>
       </div>
     </section>
-    <!-- End Key Results & Conclusions -->
+
 
 
     <!-- BibTex citation -->
