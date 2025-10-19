@@ -268,7 +268,7 @@
       </div>
     </section>
 
-    <!-- Key Results & Conclusions -->
+   <!-- Key Results & Conclusions -->
     <section class="section hero">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Key Results & Conclusions</h2>
@@ -277,11 +277,11 @@
           <div class="columns is-multiline">
             <div class="column is-half">
               <img src="static/images/result1_placeholder.png" alt="Figure from paper: Attack Success Rate comparison" loading="lazy"/>
-              <p><strong>Figure 1:</strong> Attack Success Rate across various topologies – AdvEvo-MARL reduces ASR to <20% vs baseline ~38%.</p>
+              <p><strong>Figure 1:</strong> Attack Success Rate (ASR) across various topologies – our method reduces ASR to <20% vs. baseline ~38%.</p>
             </div>
             <div class="column is-half">
               <img src="static/images/result2_placeholder.png" alt="Figure/Table from paper: Task Accuracy improvement" loading="lazy"/>
-              <p><strong>Figure 2:</strong> Task accuracy change – our method achieves task accuracy increases up to +3.7% compared to baseline.</p>
+              <p><strong>Figure 2:</strong> Task accuracy change – we achieve task accuracy increases up to +3.7% compared to baseline.</p>
             </div>
             <div class="column is-half">
               <img src="static/images/result3_placeholder.png" alt="Table from paper: Ablation study public baseline" loading="lazy"/>
@@ -292,17 +292,31 @@
               <p><strong>Figure 3:</strong> Safety-utility trade-off – confirms that safety gains do not come at the cost of utility loss.</p>
             </div>
           </div>
+    
           <h4 class="subtitle is-4">Conclusions</h4>
           <p>
-            The results clearly indicate that internalizing safety via co-evolution in multi-agent systems is a viable path:  
-            • Advocate for embedding safety within the learning process rather than relying on external guard modules.  
-            • Demonstrate that safety (low ASR) and utility (task accuracy) can both be improved concurrently.  
-            • Show that mechanisms like a public baseline enhance stability and coordination in adversarial multi-agent training.  
-            In summary, AdvEvo-MARL offers a unified framework that scales to evolving adversarial threats while preserving strong agent capability and system robustness.
+            This study demonstrates through extensive experiments that embedding safety directly into the learning process of multi-agent systems is a viable and effective strategy. Unlike traditional approaches where improving safety often comes at the expense of task performance, our framework—<strong>AdvEvo-MARL</strong>—achieves both higher safety and maintained or improved utility.
+          </p>
+          <p>
+            First, across diverse attack topologies (chain, tree, complete) and adversarial modes (jailbreak, prompt injection, multi-agent collusion), AdvEvo-MARL consistently drives the Attack Success Rate (ASR) below 20%, outperforming baseline methods which reach ~38%.  
+          </p>
+          <p>
+            Second, on the task-performance front, not only does the framework avoid the common trade-off between defense and utility, but it even yields up to +3.7% improvement in task accuracy in certain scenarios. This indicates that our method enables agents to become safe *and* capable.  
+          </p>
+          <p>
+            Third, from a training and system-design perspective, the introduction of a <em>public-baseline</em> for advantage estimation reduces variance in policy updates and enhances intra-group coordination, while the co-evolutionary interaction between attacker and defender agents fosters robust adaptation to evolving threats.  
+          </p>
+          <p>
+            Finally, from a broader system architecture standpoint, embed­ding safety within the agent framework (rather than relying on external guard modules) provides a lighter, more scalable, and less failure-prone solution. In summary, AdvEvo-MARL offers a unified framework that evolves alongside adversarial threats while preserving strong task performance.  
+          </p>
+          <p>
+            Looking ahead, this work paves the way for safer, more capable multi-agent systems: future directions include extending to long-horizon, multi-task, multi-modal environments, and scaling to larger agent populations and open-ended co-evolution settings.  
           </p>
         </div>
       </div>
     </section>
+    <!-- End Key Results & Conclusions -->
+
 
     <!-- BibTex citation -->
     <section class="section" id="BibTeX">
